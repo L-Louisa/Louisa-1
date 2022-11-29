@@ -42,3 +42,5 @@ git merge dev                注：merge 合并
 git branch -d dev
 git switch -c dev
 git switch master
+git log --graph：查看分支合并图
+git merge --no-ff -m"注释说明" dev：加上参数no-ff后可以用普通模式合并，合并后的历史有分支，能看出曾经做过合并。
