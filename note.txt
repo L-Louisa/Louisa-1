@@ -1,0 +1,18 @@
+git config :配置或读取工作环境变量   eg:   git config --global user.name "Louisa"   global更改的是主目录下的配置文件（可以理解为之后的项目全都适用）
+如果要更改某个特定项目，就去掉--global重新配置。
+
+git config --list：查看配置信息
+
+工作区：电脑里看到的目录   暂存区：stage or index，放在.git目录里    版本库
+git add：工作区内容被加入暂存区
+git commit -m"一些说明和备注"：从暂存区提交到版本库
+git status：掌握仓库当前的状态
+git diff：可以查看修改的内容
+git log：查看从近到远的提交日志
+HEAD：代表的是当前的版本，上一个版本是HEAD＾，上上个是HEAD＾＾，往上１００个是HEAD～１００
+git reset --hard HEAD^：即退回上一个版本
+git reset　--hard commit_id(版本号）：指定回到某个版本，过去或未来都可以
+git reflog：查看每一次命令的版本号
+git checkout -- file：把该文件在工作区的修改全部撤销（在commit之前可以用这个命令撤销，如果已经提交到了版本库但是还没有推送到远程库，可以用git reset HEAD file修改）
+git reset HEAD file：撤销掉暂存区的修改
+cat file：查看该文件的内容
