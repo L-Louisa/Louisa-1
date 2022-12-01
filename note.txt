@@ -1,4 +1,5 @@
-git config :配置或读取工作环境变量   eg:   git config --global user.name "Louisa"   global更改的是主目录下的配置文件（可以理解为之后的项目全都适用）
+git config :配置或读取工作环境变量  
+ eg:   git config --global user.name "Louisa"   global更改的是主目录下的配置文件（可以理解为之后的项目全都适用）
 如果要更改某个特定项目，就去掉--global重新配置。
 
 git config --list：查看配置信息
